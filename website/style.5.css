@@ -1,0 +1,751 @@
+:root{
+    --card-rad: 16px;
+    --max-width: 1256px;
+    --title-color: rgba(255, 255, 255, 0.85);
+    --subtitle-color: rgba( 0, 180, 255, 1);
+    --text-color: rgb(255, 255, 255, 0.85);
+    --site-font: inter;
+    --center-text-block-vert-padd: 512px;
+    --card-vert-margins: 64px;
+    --types-card-vert-margins: 32px;
+    --section-margins: 128px;
+}
+
+
+
+/* Main Body *IGNORE* */
+body{
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+
+/* Visual Effects Site Title */
+h1{
+    color: var(--title-color);
+    font-family: var(--site-font);
+    font-style:normal ;
+    font-size: 128px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: normal;
+    margin: 0%;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* Site Hero Subtitle */
+h2{
+    color: var(--title-color);
+    font-family: var(--site-font);
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: normal;
+    margin: 0%;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Intro BIG text */
+h3{
+    color: var(--title-color);
+    font-family: var(--site-font);
+    font-style: normal;
+    font-size: 156px;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: 24px;
+    margin: 0%;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Center Text blocks */
+h4{
+    color: var(--title-color);
+    font-family: var(--site-font);
+    font-style: normal;
+    font-size: 56px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.25;
+    letter-spacing: normal;
+    margin: 0%;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* subtitle for most content titles */
+h5{
+    color: var(--subtitle-color);
+    font-family: var(--site-font);
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: normal;
+    margin: 0%;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* side justified title cards */
+h6{
+    color: var(--title-color);
+    font-family: var(--site-font);
+    font-style: normal;
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: uppercase;
+    line-height: normal;
+    margin: 0%;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Paragraph/main text content */
+p{
+    color: var(--text-color);
+    font-family: var(--site-font);
+    font-style: normal;
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: capitalize;
+    line-height: normal;
+    margin: 0%;
+    -webkit-font-smoothing: antialiased;
+    text-align: left;
+}
+
+
+
+
+/* ----------Start of actual formating---------- */
+
+
+
+/* hero section */
+
+.hero-section{
+    background-image: url(CORAL_FILMS+_header_desktop_2150x940px.jpg);
+    background-color: rgb(71, 71, 71);
+    background-blend-mode: overlay;
+    width: 100%;
+    aspect-ratio: 3 / 2 ;
+    background-size: auto 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* body container */
+
+
+.body-card{
+    background-color: #0A0A0F;
+    width: 100%;
+    border-radius: 32px;
+    margin-top: -64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*----------  Kit Starting BIG Title  ----------*/
+
+
+.title{
+    width: 100%;
+    height: fit-content;
+}
+
+.title-text{
+    width: fit-content;
+    height: fit-content;
+    align-items: start;
+    margin: 64px;
+}
+
+
+
+
+/*----------  Kit Intro  ----------*/
+
+.web-intro{
+    width: 100%;
+    padding-top: var(--center-text-block-vert-padd);
+    padding-bottom: var(--center-text-block-vert-padd);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0%;
+}
+
+/* ----------CENTER TEXT BLOCKS---------- */
+.center-text-blocks{
+    width: 896px;
+    height: fit-content;
+}
+
+
+/*----------  Misuse qoute  ----------*/
+
+.qoute{
+    width: 100%;
+    padding-top: var(--center-text-block-vert-padd);
+    padding-bottom: var(--center-text-block-vert-padd);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*----------  FIRST THREE Content Card Rows  ----------*/
+
+.why-what-options{
+    width: 100%;
+    margin-top: var(--section-margins);
+    margin-bottom: var(--section-margins);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-card{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    text-align: inherit;
+    font-size: 64px;
+    margin: 16px;
+}
+
+.paragraph-card{
+    width: 45%;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 16px;
+}
+
+
+/*----------  Why My Kit  ----------*/
+
+.why-mine{
+    width: 100%;
+    height: 256px;
+    max-width: var(--max-width);
+    margin-top: var(--card-vert-margins);
+    margin-bottom: var(--card-vert-margins);
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/*----------  WHat Is VFX  ----------*/
+
+.what-is-vfx{
+    width: 100%;
+    height: 256px;
+    max-width: var(--max-width);
+    margin-top: var(--card-vert-margins);
+    margin-bottom: var(--card-vert-margins);
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+/*----------  Not Just Artistic stuff  ----------*/
+
+.diversity{
+    width: 100%;
+    height: 256px;
+    max-width: var(--max-width);
+    margin-top: var(--card-vert-margins);
+    margin-bottom: var(--card-vert-margins);
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+/*=============================================
+=            The Forces Shaping VFX (Different Experties)            =
+=============================================*/
+
+
+.artist-types{
+    width: 100%;
+    margin-top: var(--section-margins);
+    margin-bottom: var(--section-margins);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.types-title{
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+
+
+
+/*----------  Title Cards For Artist Types  ----------*/
+
+.types-title-card{
+    width: 45%;
+    height: 384px;
+    margin-top: var(--types-card-vert-margins);
+    margin-bottom:  var(--types-card-vert-margins);
+    margin-left:16px;
+    margin-right:16px;
+    font-size: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*----------  Artist Types Scroll Cards Parent  ----------*/
+
+
+.types-scroll-card-container{
+    width: 55%;
+    height: 384px;
+    margin-top:  var(--types-card-vert-margins);
+    margin-bottom: var(--types-card-vert-margins);
+    margin-left:16px;
+    margin-right:16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    scroll-snap-type: y mandatory;
+    align-items: center;
+    
+    /*
+    scrollbar-width: none;
+    -ms-overflow-style: none;  
+    */
+}
+
+/*
+.types-scroll-card-container:: ::-webkit-scrollbar{
+    display: none;
+}
+*/
+
+.scroll-indicator{
+    height: 384px;
+    width: 32px;
+    color: white;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scroll-text{
+    height: 384px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scroll-card-one{
+    width: 75%;
+    height: 384px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+}
+
+.scroll-card-two{
+    width: 75%;
+    height: 384px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+}
+
+.scroll-card-three{
+    width: 75%;
+    height: 384px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+}
+
+.scroll-card-title{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.scroll-card-text{
+    font-size: 24px;
+    font-weight: 800;
+    opacity: 75%;
+}
+
+/*----------  Phase One  ----------*/
+
+.phase-cards{
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/*----------  Phase two  ----------*/
+
+.phase-cards-reverse{
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+/*=============================================
+=            VFX Examples            =
+=============================================*/
+
+.vfx-examples{
+    width: 100%;
+    height: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: var(--section-margins);
+    margin-bottom: var(--section-margins);
+}
+
+.example-titles{
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+}
+
+.horizontal-content{
+    width: 100%;
+    height: 512px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;  
+
+    will-change: transform;
+}
+
+.horizontal-container{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.horizontal-content::-webkit-scrollbar {
+    display: none;
+  }
+
+#example-card{
+    border-radius: var(--card-rad);
+    width: 720px;
+    height: 410px;
+    margin: 16px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.slider-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*
+
+#previous{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    opacity: 50%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+#next{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    opacity: 50%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+*/
+
+#filler{
+    border-radius: var(--card-rad);
+    width: 720px;
+    height: 410px;
+    margin: 16px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.hover-title{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.hover-text{
+    opacity: 75%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#poster-hover{
+    border-radius: inherit;
+    width: 720px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur( 8px);
+    -webkit-backdrop-filter: blur(8px);
+    opacity: 0%;
+}
+
+#poster-hover:hover{
+    transition: opacity 200ms;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    opacity: 100%;
+}
+
+#poster-one{
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    background-image: url(36edcf0527cc1cafabecf5e27647b73e10c96cca-1920x1080.png.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#poster-two{
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    background-image: url(MV5BZDc0ZjcxZTktMDVmNS00OTMxLTgxNTktNTA0MjRmZjFlNzY0XkEyXkFqcGc@._V1_FMjpg_UX2160_.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto 100%;
+}
+
+#poster-three{
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    background-image: url(Avatar_Twitter.jpeg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+#poster-four{
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    background-image: url(MV5BNmJjZDU3MTYtNzNhMi00MzVkLWI4ZjktZmI1MTBiMDhmOTM4XkEyXkFqcGc@._V1_FMjpg_UX1920_.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#poster-five{
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    background-image: url(interstellar-41up.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+
+
+/*=============================================
+=            Misuse            =
+=============================================*/
+
+.misuse{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--section-margins);
+    margin-bottom: var(--section-margins);
+}
+
+.misuse-cards{
+    height: fit-content;
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+}
+
+#row-one{
+    margin-bottom: 64px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#row-two{
+    margin-top: 64px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;    
+}
+
+.poster{
+    width: 65%;
+    height: 448px;
+    position: relative;
+}
+
+.content-one{
+    border-radius: var(--card-rad);
+    background-image: url(345890079_649442590532021_8425814995231854364_n.jpg);
+    background-size: auto 100%;
+    background-repeat: none;
+    background-position: -96px 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.content-two{
+    border-radius: var(--card-rad);
+    background-image: url(513b43c8bb56e9309b875173835b1e61.jpg);
+    background-size: auto 100% ;
+    background-repeat: none;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.misuse-text{
+    margin: 64px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 35%;
+    height: 512px;
+}
+
+
+/*=============================================
+=            Next Steps            =
+=============================================*/
+
+.next-steps{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--section-margins);
+    margin-bottom: var(--section-margins);
+}
+
+.next-steps-titles{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.next-steps-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.card-svg{
+    margin: 16px;
+    width: 96px;
+    height: 96px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.card-content{
+    background-color: rgb(20, 20, 20, 1);
+    box-shadow: 0px 0px 64px 0px rgba(199, 211, 234, 0.05) inset, 0px 0px 1px 0px rgba(199, 211, 234, 0.12) inset, 0px 0px 8px 0px rgba(65, 65, 65, 0.70);;
+    margin: 32px;
+    border-radius: var(--card-rad);
+    width: 256px;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text{
+    margin-top: 4px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
